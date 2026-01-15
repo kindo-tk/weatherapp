@@ -54,31 +54,34 @@ weather_app/
     cd weatherapp
     ```
 
-3. **Create a virtual environment:**
+3. **Create and activate the virtual environment:**
 
-    ```sh
+   **Windows:**
+    ```bash
     python -m venv .venv
+    .venv\Scripts\activate
+    ```
+    
+    **macOS/Linux:**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
     ```
 
-4. **Activate the virtual environment:**
 
-   ```sh
-   .venv\Scripts\activate
-   ```
-
-5. **Install the required packages:**
+4. **Install the required packages:**
 
     ```sh
     pip install -r requirements.txt
     ```
-6. **Create .env file:**
+5. **Create .env file:**
 
       ```
       Create a .env file in the project root:
     
       WEATHER_API_KEY=your_openweather_api_key_here
     ```
-7. **Run the application:**
+6. **Run the application:**
 
     ```sh
     python app.py
